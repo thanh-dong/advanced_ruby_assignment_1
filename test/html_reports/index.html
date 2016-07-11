@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Results</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Test Results</h1>
+        <p>
+            Finished in 0.03s, 659.76 tests/s, 623.11 assertions/s
+        </p>
+        <p>
+            <strong>
+            <span class="">18 tests</span>,
+            <span class=""> 17 assertions</span>,
+            <span class="text-danger"> 9 failures</span>,
+            <span class=""> 0 errors</span>,
+            <span class="text-warning"> 8 skips</span>
+            </strong>
+        </p>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" style="width: 6%">
+                6% passed
+            </div>
+            <div class="progress-bar progress-bar-danger" style="width: 50%">
+                50% failed
+            </div>
+            <div class="progress-bar progress-bar-warning" style="width: 44%">
+                44% skipped
+            </div>
+        </div>
+
+
+    </div>
+
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestBasicTypes</strong>
+                <span class="pull-right">
+                    <span class="">3 tests</span>,
+                    <span class=""> 1 assertions</span>,
+                    <span class="text-danger"> 1 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class="text-warning"> 2 skips</span>,
+                    <span> finished in 0.0111s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_ancestors
+                                <span class="pull-right">
+                                    Assertions 1, time 0.010992s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_hierarchy.rb:32
+
+--- expected
++++ actual
+@@ -1 +1 @@
+-[]
++[Object, Minitest::Expectations, Kernel, BasicObject]
+</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_object_and_basic_object_class
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000077s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_hierarchy.rb:23
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_ruby_types
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000049s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_hierarchy.rb:7
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestChild</strong>
+                <span class="pull-right">
+                    <span class="">1 tests</span>,
+                    <span class=""> 1 assertions</span>,
+                    <span class="text-danger"> 1 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class=""> 0 skips</span>,
+                    <span> finished in 0.0040s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_ancestors
+                                <span class="pull-right">
+                                    Assertions 1, time 0.004010s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_hierarchy.rb:57
+
+--- expected
++++ actual
+@@ -1 +1 @@
+-[Child, Parent, Playing, GoingToSchool, Working]
++[Child, Playing, GoingToSchool, Parent, Working]
+</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestIncludingPrintableHooked</strong>
+                <span class="pull-right">
+                    <span class="">1 tests</span>,
+                    <span class=""> 2 assertions</span>,
+                    <span class="text-danger"> 1 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class=""> 0 skips</span>,
+                    <span> finished in 0.0001s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_including_printable_hooked
+                                <span class="pull-right">
+                                    Assertions 2, time 0.000089s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_include_vs_exclude.rb:71
+
+In stdout.
+Expected /included in .*\nextended in/ to match "".</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestLambdaProcDifferences</strong>
+                <span class="pull-right">
+                    <span class="">5 tests</span>,
+                    <span class=""> 6 assertions</span>,
+                    <span class="text-danger"> 5 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class=""> 0 skips</span>,
+                    <span> finished in 0.0087s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_arity_of_lambda
+                                <span class="pull-right">
+                                    Assertions 1, time 0.000032s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_lambda_vs_proc.rb:16
+
+Expected: "TBI"
+  Actual: "hello"</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_arity_of_proc
+                                <span class="pull-right">
+                                    Assertions 1, time 0.000060s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_lambda_vs_proc.rb:26
+
+Expected: "TBI"
+  Actual: "hello"</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_class_name
+                                <span class="pull-right">
+                                    Assertions 1, time 0.004324s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_lambda_vs_proc.rb:11
+
+--- expected
++++ actual
+@@ -1 +1,2 @@
+-"TBI"
++# encoding: US-ASCII
++"Proc"
+</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_return_keyword_in_lambda
+                                <span class="pull-right">
+                                    Assertions 2, time 0.000167s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_lambda_vs_proc.rb:39
+
+In stdout.
+Expected /lambda executed.*end_of_lambda caller executed/ to match "end of lambda_caller executed\n".</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_return_keyword_in_proc
+                                <span class="pull-right">
+                                    Assertions 1, time 0.004112s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_lambda_vs_proc.rb:53
+
+--- expected
++++ actual
+@@ -1 +1 @@
+-"VALUE"
++#<Proc:0xXXXXXX@/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_lambda_vs_proc.rb:46>
+</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestPrintableModule</strong>
+                <span class="pull-right">
+                    <span class="">2 tests</span>,
+                    <span class=""> 7 assertions</span>,
+                    <span class="text-danger"> 1 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class=""> 0 skips</span>,
+                    <span> finished in 0.0002s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-remove text-danger"  aria-hidden="true"></span>
+                                
+                                test_calling_module_class_method_x
+                                <span class="pull-right">
+                                    Assertions 1, time 0.000068s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_include_vs_exclude.rb:15
+
+Expected: "class_method_x"
+  Actual: nil</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ok text-info" aria-hidden="true"></span>
+                                
+                                test_calling_module_instance_method_y
+                                <span class="pull-right">
+                                    Assertions 6, time 0.000097s
+                                </span>
+                            </h5>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestExtendDocument</strong>
+                <span class="pull-right">
+                    <span class="text-info">1 tests</span>,
+                    <span class=""> 0 assertions</span>,
+                    <span class=""> 0 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class="text-warning"> 1 skips</span>,
+                    <span> finished in 0.0000s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_calling_instance_method_y
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000040s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_include_vs_exclude.rb:33
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestIncludeDocument</strong>
+                <span class="pull-right">
+                    <span class="text-info">1 tests</span>,
+                    <span class=""> 0 assertions</span>,
+                    <span class=""> 0 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class="text-warning"> 1 skips</span>,
+                    <span> finished in 0.0000s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_calling_instance_method_y
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000031s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_include_vs_exclude.rb:44
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>TestMyClass</strong>
+                <span class="pull-right">
+                    <span class="text-info">4 tests</span>,
+                    <span class=""> 0 assertions</span>,
+                    <span class=""> 0 failures</span>,
+                    <span class=""> 0 errors</span>,
+                    <span class="text-warning"> 4 skips</span>,
+                    <span> finished in 0.0001s</span>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_class_methods
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000033s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_vs_instance.rb:37
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_class_variables
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000027s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_vs_instance.rb:21
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_instance_methods
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000028s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_vs_instance.rb:31
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                        <div class="list-group-item">
+                            <h5 class="list-group-item-heading">
+                                
+                                    <span class="glyphicon glyphicon-ban-circle text-warning" aria-hidden="true"></span>
+                                
+                                test_instance_variables
+                                <span class="pull-right">
+                                    Assertions 0, time 0.000039s
+                                </span>
+                            </h5>
+                            
+                                <pre class="list-group-item-text">/Users/dtt22/code/coderschool/advanced_ruby/advanced_ruby_lecture1/unit_1/u1_class_vs_instance.rb:26
+
+Skipped, no message given</pre>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>
