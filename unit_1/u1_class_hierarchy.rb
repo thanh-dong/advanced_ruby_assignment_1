@@ -4,32 +4,27 @@ class TestBasicTypes < Minitest::Test
   def test_ruby_types
     h = {"hash?" => "yep, it\'s a hash!", "the answer to everything" => 42, :linux => "fun for coders."}
 
-    skip
-    # TODO: change TBI (To Be Implemented) to the correct constant names
-    assert_equal TBI, "Stringy string McString!".class
-    assert_equal TBI, 1.class
-    assert_equal TBI, 1.class.superclass
-    assert_equal TBI, 1.class.superclass.superclass
-    assert_equal TBI, 4.3.class
-    assert_equal TBI, 4.3.class.superclass
-    assert_equal TBI,  nil.class
-    assert_equal TBI, h.class
-    assert_equal TBI, :symbol.class
-    assert_equal TBI, [].class
-    assert_equal TBI, (1..8).class
+    assert_equal String, "Stringy string McString!".class
+    assert_equal Fixnum, 1.class
+    assert_equal Integer, 1.class.superclass
+    assert_equal Numeric, 1.class.superclass.superclass
+    assert_equal Float, 4.3.class
+    assert_equal Numeric, 4.3.class.superclass
+    assert_equal NilClass,  nil.class
+    assert_equal Hash, h.class
+    assert_equal Symbol, :symbol.class
+    assert_equal Array, [].class
+    assert_equal Range, (1..8).class
   end
 
   def test_object_and_basic_object_class
-    skip
-    # TODO: change TBI (To Be Implemented) to the correct constant names
-    assert_equal TBI, String.superclass
-    assert_equal TBI, Object.superclass
-    assert_nil   TBI.superclass # only one thing has a nil superclass. what is it?
+    assert_equal Object, String.superclass
+    assert_equal BasicObject, Object.superclass
+    assert_nil   BasicObject.superclass # only one thing has a nil superclass. what is it?
   end
 
   def test_ancestors
-    # TODO: fix to include necessary modules and classes
-    assert_equal [], Object.ancestors
+    assert_equal [Object, Minitest::Expectations, Kernel, BasicObject], Object.ancestors
   end
 end
 
@@ -54,7 +49,7 @@ end
 class TestChild < Minitest::Test
   def test_ancestors
     # Fix the order and understand why
-    assert_equal [Child, Parent, Playing, GoingToSchool, Working], Child.ancestors - Object.ancestors
+    assert_equal [Child, Playing, GoingToSchool, Parent, Working], Child.ancestors - Object.ancestors
   end
 end
 

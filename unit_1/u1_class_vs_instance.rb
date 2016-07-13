@@ -17,24 +17,19 @@ end
 # Task 1: write at least 4 methods
 class TestMyClass < MiniTest::Test
   def test_class_variables
-    # please list the names of the class variables here
-    skip
-    assert_equal [], MyClass.class_variables
+    assert_equal [:@@one], MyClass.class_variables
   end
 
   def test_instance_variables
-    skip
-    assert_equal [], MyClass.instance_variables
+    assert_equal [:@two], MyClass.instance_variables
   end
 
   def test_instance_methods
-    skip
-    assert_equal [], MyClass.instance_methods(false)
-    assert_equal [], MyClass.instance_methods - Object.methods
+    assert_equal [:method2], MyClass.instance_methods(false)
+    assert_equal [:method2], MyClass.instance_methods - Object.methods
   end
 
   def test_class_methods
-    skip
-    assert_equal [], MyClass.methods(false)
+    assert_equal [:three, :three=, :method1], MyClass.methods(false)
   end
 end
